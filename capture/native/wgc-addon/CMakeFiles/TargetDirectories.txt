@@ -1,0 +1,3 @@
+F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/capture_addon.dir
+F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/edit_cache.dir
+F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/rebuild_cache.dir

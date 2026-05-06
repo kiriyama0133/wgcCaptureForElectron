@@ -1,0 +1,3 @@
+F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/capture_addon.dir
+F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/ALL_BUILD.dir
+F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,14 @@
+# ninja log v6
+9	3181	7997834987861042	CMakeFiles/capture_addon.dir/addon.cpp.obj	27c4a45b789f294a
+15	7107	7997834987919371	CMakeFiles/capture_addon.dir/main_n.cpp.obj	d0b6da845bdbb11b
+7107	9945	7997835086921005	capture_addon.node	eb3eb583840ef2d
+7107	9945	7997835086921005	capture_addon.lib	eb3eb583840ef2d
+9	3984	7997844808755267	CMakeFiles/capture_addon.dir/addon.cpp.obj	27c4a45b789f294a
+3985	7177	7997844848508080	capture_addon.node	eb3eb583840ef2d
+3985	7177	7997844848508080	capture_addon.lib	eb3eb583840ef2d
+10	2826	7997862390036898	CMakeFiles/capture_addon.dir/addon.cpp.obj	27c4a45b789f294a
+2828	6011	7997862418209760	capture_addon.node	eb3eb583840ef2d
+2828	6011	7997862418209760	capture_addon.lib	eb3eb583840ef2d
+12	2816	7997863755252662	CMakeFiles/capture_addon.dir/addon.cpp.obj	27c4a45b789f294a
+2817	5955	7997863783303749	capture_addon.node	eb3eb583840ef2d
+2817	5955	7997863783303749	capture_addon.lib	eb3eb583840ef2d
