@@ -177,6 +177,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{EC24936A-B980-3247-A907-C0388FA0E0E2}</Project>
       <Name>capture_addon</Name>
     </ProjectReference>
+    <ProjectReference Include="F:\glfwExamle\glfwExample\glfwExample\build\mf_recording_smoke.vcxproj">
+      <Project>{15EDE15F-E19A-3167-A8EC-1FC81A693269}</Project>
+      <Name>mf_recording_smoke</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

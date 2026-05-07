@@ -60,6 +60,32 @@ const captureAPI = {
     const a = getAddon()
     if (!a) return null
     return a.getFrame()
+  },
+  /** @param {string} outputPath UTF-8 路径，如 C:\\\\out\\\\cap.mp4 */
+  startRecording: (outputPath, config) => {
+    if (process.env.SKIP_NATIVE === '1') return Promise.resolve()
+    const a = getAddon()
+    if (!a) throw new Error('native addon not loaded')
+    return Promise.resolve(a.startRecording(outputPath, config))
+  },
+  stopRecording: () => {
+    if (process.env.SKIP_NATIVE === '1') return undefined
+    const a = getAddon()
+    if (!a) return undefined
+    return a.stopRecording()
+  },
+  isRecording: () => {
+    if (process.env.SKIP_NATIVE === '1') return false
+    const a = getAddon()
+    if (!a) return false
+    return a.isRecording()
+  },
+  /** @returns {Promise<Array<{ id: string, name: string }>>} */
+  getAudioOutputDevices: () => {
+    if (process.env.SKIP_NATIVE === '1') return Promise.resolve([])
+    const a = getAddon()
+    if (!a) return Promise.resolve([])
+    return Promise.resolve(a.getAudioOutputDevices())
   }
 }
 

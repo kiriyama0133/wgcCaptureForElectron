@@ -1,3 +1,5 @@
 F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/capture_addon.dir
+F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/mf_recording_smoke.dir
+F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/RUN_TESTS.dir
 F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/ALL_BUILD.dir
 F:/glfwExamle/glfwExample/glfwExample/build/CMakeFiles/ZERO_CHECK.dir

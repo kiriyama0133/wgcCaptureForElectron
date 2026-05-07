@@ -22,31 +22,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{EC24936A-B980-3247-A907-C0388FA0E0E2}</ProjectGuid>
+    <ProjectGuid>{15EDE15F-E19A-3167-A8EC-1FC81A693269}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
-    <ProjectName>capture_addon</ProjectName>
+    <ProjectName>mf_recording_smoke</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
@@ -60,35 +60,34 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\glfwExamle\glfwExample\glfwExample\build\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">capture_addon.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">capture_addon</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.node</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mf_recording_smoke.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mf_recording_smoke</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\glfwExamle\glfwExample\glfwExample\build\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">capture_addon.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">capture_addon</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.node</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mf_recording_smoke.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mf_recording_smoke</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\glfwExamle\glfwExample\glfwExample\build\MinSizeRel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">capture_addon.dir\MinSizeRel\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">capture_addon</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.node</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mf_recording_smoke.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">mf_recording_smoke</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\glfwExamle\glfwExample\glfwExample\build\RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">capture_addon.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">capture_addon</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.node</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mf_recording_smoke.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">mf_recording_smoke</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
-  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /await /utf-8</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <ConformanceMode>true</ConformanceMode>
@@ -103,16 +102,16 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WGC_NATIVE_NODE_ADDON;NAPI_CPP_EXCEPTIONS;FMT_HEADER_ONLY;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Debug";capture_addon_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WGC_NATIVE_NODE_ADDON;NAPI_CPP_EXCEPTIONS;FMT_HEADER_ONLY;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Debug\";capture_addon_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -120,13 +119,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>d3d11.lib;windowsapp.lib;delayimp.lib;mfplat.lib;mfuuid.lib;mfreadwrite.lib;avrt.lib;Mmdevapi.lib;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\x64\node.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;mfplat.lib;mfuuid.lib;mfreadwrite.lib;avrt.lib;Mmdevapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <DelayLoadDLLs>NODE.EXE</DelayLoadDLLs>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/glfwExamle/glfwExample/glfwExample/build/Debug/capture_addon.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/glfwExamle/glfwExample/glfwExample/build/Debug/capture_addon.pdb</ProgramDataBaseFile>
+      <ImportLibrary>F:/glfwExamle/glfwExample/glfwExample/build/Debug/mf_recording_smoke.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/glfwExamle/glfwExample/glfwExample/build/Debug/mf_recording_smoke.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -135,8 +134,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /await /utf-8</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ConformanceMode>true</ConformanceMode>
@@ -150,18 +149,18 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WGC_NATIVE_NODE_ADDON;NAPI_CPP_EXCEPTIONS;FMT_HEADER_ONLY;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Release";capture_addon_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WGC_NATIVE_NODE_ADDON;NAPI_CPP_EXCEPTIONS;FMT_HEADER_ONLY;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Release\";capture_addon_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -169,13 +168,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>d3d11.lib;windowsapp.lib;delayimp.lib;mfplat.lib;mfuuid.lib;mfreadwrite.lib;avrt.lib;Mmdevapi.lib;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\x64\node.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;mfplat.lib;mfuuid.lib;mfreadwrite.lib;avrt.lib;Mmdevapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <DelayLoadDLLs>NODE.EXE</DelayLoadDLLs>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/glfwExamle/glfwExample/glfwExample/build/Release/capture_addon.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/glfwExamle/glfwExample/glfwExample/build/Release/capture_addon.pdb</ProgramDataBaseFile>
+      <ImportLibrary>F:/glfwExamle/glfwExample/glfwExample/build/Release/mf_recording_smoke.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/glfwExamle/glfwExample/glfwExample/build/Release/mf_recording_smoke.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -184,8 +183,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /await /utf-8</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ConformanceMode>true</ConformanceMode>
@@ -199,18 +198,18 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WGC_NATIVE_NODE_ADDON;NAPI_CPP_EXCEPTIONS;FMT_HEADER_ONLY;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="MinSizeRel";capture_addon_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WGC_NATIVE_NODE_ADDON;NAPI_CPP_EXCEPTIONS;FMT_HEADER_ONLY;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"MinSizeRel\";capture_addon_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -218,13 +217,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>d3d11.lib;windowsapp.lib;delayimp.lib;mfplat.lib;mfuuid.lib;mfreadwrite.lib;avrt.lib;Mmdevapi.lib;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\x64\node.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;mfplat.lib;mfuuid.lib;mfreadwrite.lib;avrt.lib;Mmdevapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <DelayLoadDLLs>NODE.EXE</DelayLoadDLLs>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/glfwExamle/glfwExample/glfwExample/build/MinSizeRel/capture_addon.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/glfwExamle/glfwExample/glfwExample/build/MinSizeRel/capture_addon.pdb</ProgramDataBaseFile>
+      <ImportLibrary>F:/glfwExamle/glfwExample/glfwExample/build/MinSizeRel/mf_recording_smoke.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/glfwExamle/glfwExample/glfwExample/build/MinSizeRel/mf_recording_smoke.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -233,8 +232,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /await /utf-8</AdditionalOptions>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ConformanceMode>true</ConformanceMode>
@@ -249,16 +248,16 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WGC_NATIVE_NODE_ADDON;NAPI_CPP_EXCEPTIONS;FMT_HEADER_ONLY;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="RelWithDebInfo";capture_addon_EXPORTS</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WGC_NATIVE_NODE_ADDON;NAPI_CPP_EXCEPTIONS;FMT_HEADER_ONLY;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"RelWithDebInfo\";capture_addon_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;F:\glfwExamle\glfwExample\glfwExample\node_modules\node-addon-api;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\include\node;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\glfwExamle\glfwExample\glfwExample;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -266,13 +265,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>d3d11.lib;windowsapp.lib;delayimp.lib;mfplat.lib;mfuuid.lib;mfreadwrite.lib;avrt.lib;Mmdevapi.lib;C:\Users\20742\.cmake-js\electron-x64\v39.8.9\x64\node.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;mfplat.lib;mfuuid.lib;mfreadwrite.lib;avrt.lib;Mmdevapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <DelayLoadDLLs>NODE.EXE</DelayLoadDLLs>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>F:/glfwExamle/glfwExample/glfwExample/build/RelWithDebInfo/capture_addon.lib</ImportLibrary>
-      <ProgramDataBaseFile>F:/glfwExamle/glfwExample/glfwExample/build/RelWithDebInfo/capture_addon.pdb</ProgramDataBaseFile>
+      <ImportLibrary>F:/glfwExamle/glfwExample/glfwExample/build/RelWithDebInfo/mf_recording_smoke.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/glfwExamle/glfwExample/glfwExample/build/RelWithDebInfo/mf_recording_smoke.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -337,11 +336,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="F:\glfwExamle\glfwExample\glfwExample\addon.cpp" />
-    <ClCompile Include="F:\glfwExamle\glfwExample\glfwExample\main_n.cpp" />
+    <ClCompile Include="F:\glfwExamle\glfwExample\glfwExample\tests\mf_recording_smoke.cpp" />
     <ClCompile Include="F:\glfwExamle\glfwExample\glfwExample\WasapiLoopback.cpp" />
-    <ClCompile Include="F:\glfwExamle\glfwExample\glfwExample\audio_output_devices.cpp" />
-    <ClCompile Include="F:\glfwExamle\glfwExample\glfwExample\node_modules\.pnpm\cmake-js@8.0.0\node_modules\cmake-js\lib\cpp\win_delay_load_hook.cc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="F:\glfwExamle\glfwExample\glfwExample\build\ZERO_CHECK.vcxproj">

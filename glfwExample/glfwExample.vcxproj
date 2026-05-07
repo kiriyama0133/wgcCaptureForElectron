@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.250303.1\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.250303.1\build\native\Microsoft.Windows.CppWinRT.props')" />
   <ItemGroup Label="ProjectConfigurations">
@@ -134,6 +134,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="logger.h" />
+    <ClInclude Include="media_recorder.h" />
     <ClInclude Include="screen_capture.h" />
     <ClInclude Include="winrt_c.h" />
   </ItemGroup>
@@ -141,6 +142,7 @@
     <ClCompile Include="addon.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_n.cpp" />
+    <ClCompile Include="WasapiLoopback.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
