@@ -33,7 +33,7 @@ std::vector<AudioOutputDeviceInfo> EnumerateAudioRenderDevices()
         nullptr,
         CLSCTX_ALL,
         __uuidof(IMMDeviceEnumerator),
-        reinterpret_cast<void**>(enumerator.GetAddressOf()));
+        enumerator.ReleaseAndGetAddressOf());
     if (FAILED(hr)) {
         if (coinit_ok)
             CoUninitialize();

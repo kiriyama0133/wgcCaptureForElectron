@@ -25,8 +25,11 @@
     "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^4.0.0",
     "@primeuix/themes": "^2.0.3",
+    "@tailwindcss/vite": "^4.2.4",
+    "pinia": "^3.0.4",
     "primeicons": "^7.0.0",
-    "primevue": "^4.5.5"
+    "primevue": "^4.5.5",
+    "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config": "^2.1.0",

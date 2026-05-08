@@ -19,9 +19,10 @@ process.on('unhandledRejection', (reason) => {
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 670,
+    width: 1440,
+    height: 810,
     show: false,
+    frame: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
@@ -31,6 +32,12 @@ function createWindow() {
       nodeIntegration: false
     }
   })
+
+  const notifyMaximized = () => {
+    mainWindow.webContents.send('capture:win-maximized-changed', mainWindow.isMaximized())
+  }
+  mainWindow.on('maximize', notifyMaximized)
+  mainWindow.on('unmaximize', notifyMaximized)
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()
@@ -60,6 +67,23 @@ app.whenReady().then(() => {
   })
 
   ipcMain.on('ping', () => console.log('pong'))
+
+  ipcMain.handle('capture:win-minimize', (event) => {
+    BrowserWindow.fromWebContents(event.sender)?.minimize()
+  })
+  ipcMain.handle('capture:win-toggle-maximize', (event) => {
+    const win = BrowserWindow.fromWebContents(event.sender)
+    if (!win) return false
+    if (win.isMaximized()) win.unmaximize()
+    else win.maximize()
+    return win.isMaximized()
+  })
+  ipcMain.handle('capture:win-close', (event) => {
+    BrowserWindow.fromWebContents(event.sender)?.close()
+  })
+  ipcMain.handle('capture:win-is-maximized', (event) => {
+    return BrowserWindow.fromWebContents(event.sender)?.isMaximized() ?? false
+  })
 
   createWindow()
 

@@ -1,13 +1,16 @@
+@import 'tailwindcss';
 @import './base.css';
 
+html.capture-dark,
+html.capture-dark body {
+  height: 100%;
+}
+
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
   overflow: hidden;
-  background-image: url('./wavy-lines.svg');
-  background-size: cover;
   user-select: none;
+  background: var(--capture-app-bg, #0c0c0e);
 }
 
 code {
@@ -27,11 +30,49 @@ code {
 }
 
 #app {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 80px;
+  @apply flex h-full min-h-screen w-full flex-col;
+}
+
+/* 布局与 Prime 深色壳层变量 */
+.capture-dark {
+  --capture-app-bg: #0c0c0e;
+  --capture-sidebar-bg: #111113;
+  --capture-elevated: #18181b;
+  --capture-border: rgba(255, 255, 255, 0.08);
+  --capture-text: rgba(250, 250, 250, 0.92);
+  --capture-muted: rgba(161, 161, 170, 0.95);
+  /* 极细滚动条：轨道近黑、滑块黑灰 */
+  --capture-scrollbar-track: #0e0e11;
+  --capture-scrollbar-thumb: #333338;
+  --capture-scrollbar-thumb-hover: #45454d;
+}
+
+/* 全局滚动条（Electron / Chromium + Firefox thin） */
+html.capture-dark {
+  scrollbar-width: thin;
+  scrollbar-color: var(--capture-scrollbar-thumb) var(--capture-scrollbar-track);
+}
+
+html.capture-dark ::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+html.capture-dark ::-webkit-scrollbar-track {
+  background: var(--capture-scrollbar-track);
+}
+
+html.capture-dark ::-webkit-scrollbar-thumb {
+  background: var(--capture-scrollbar-thumb);
+  border-radius: 9999px;
+}
+
+html.capture-dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--capture-scrollbar-thumb-hover);
+}
+
+html.capture-dark ::-webkit-scrollbar-corner {
+  background: var(--capture-scrollbar-track);
 }
 
 .logo {

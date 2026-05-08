@@ -1,4 +1,4 @@
-import { contextBridge } from 'electron'
+import { contextBridge, ipcRenderer } from 'electron'
 import { join, dirname } from 'path'
 import { existsSync } from 'fs'
 import { fileURLToPath } from 'node:url'
@@ -34,6 +34,22 @@ function loadAddon() {
 
 function getAddon() {
   return loadAddon()
+}
+
+const windowControls = {
+  minimize: () => ipcRenderer.invoke('capture:win-minimize'),
+  toggleMaximize: () => ipcRenderer.invoke('capture:win-toggle-maximize'),
+  close: () => ipcRenderer.invoke('capture:win-close'),
+  isMaximized: () => ipcRenderer.invoke('capture:win-is-maximized'),
+  /** @param {(maximized: boolean) => void} callback */
+  onMaximizedChange(callback) {
+    const channel = 'capture:win-maximized-changed'
+    const listener = (_event, maximized) => {
+      callback(maximized)
+    }
+    ipcRenderer.on(channel, listener)
+    return () => ipcRenderer.removeListener(channel, listener)
+  }
 }
 
 const captureAPI = {
@@ -92,6 +108,7 @@ const captureAPI = {
 if (process.contextIsolated) {
   try {
     contextBridge.exposeInMainWorld('captureAPI', captureAPI)
+    contextBridge.exposeInMainWorld('windowControls', windowControls)
     contextBridge.exposeInMainWorld('electron', electronAPI)
     contextBridge.exposeInMainWorld('api', api)
   } catch (error) {
@@ -99,6 +116,7 @@ if (process.contextIsolated) {
   }
 } else {
   window.captureAPI = captureAPI
+  window.windowControls = windowControls
   window.electron = electronAPI
   window.api = api
 }

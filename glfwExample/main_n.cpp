@@ -41,9 +41,9 @@ bool IsFloatWaveFormat(const WAVEFORMATEX* pwfx)
 {
     if (!pwfx)
         return false;
-    if (pwfx->wFormatTag == WAVE_FORMAT_IEEE_FLOAT)
+    if (pwfx->wFormatTag == WAVE_FORMAT_IEEE_FLOAT) // 检查老式浮点定义
         return true;
-    if (pwfx->wFormatTag == WAVE_FORMAT_EXTENSIBLE) {
+    if (pwfx->wFormatTag == WAVE_FORMAT_EXTENSIBLE) { // 检查现代扩展格式
         const auto* ex = reinterpret_cast<const WAVEFORMATEXTENSIBLE*>(pwfx);
         return IsEqualGUID(ex->SubFormat, KSDATAFORMAT_SUBTYPE_IEEE_FLOAT) != FALSE;
     }
@@ -86,9 +86,9 @@ struct MonitorCapture::Impl {
 
 void MonitorCapture::Impl::feed_wasapi_audio(const uint8_t* data, size_t* sizeBytes, uint64_t* qpcHint)
 {
-    if (!recording_enabled.load(std::memory_order_relaxed))
+    if (!recording_enabled.load(std::memory_order_relaxed)) // 检查录制功能是否打开
         return;
-    if (!m_recorder || !m_recorder->m_isRecording.load(std::memory_order_acquire))
+	if (!m_recorder || !m_recorder->m_isRecording.load(std::memory_order_acquire)) // 检查录制器是否存在且正在录制
         return;
     if (!data || !sizeBytes || *sizeBytes == 0)
         return;

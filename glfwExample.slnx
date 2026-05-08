@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="glfwExample/glfwExample.vcxproj" />
+  <Project Path="F:/glfwExamle/glfwExample/glfwExample/glfwExample.vcxproj" Id="2c552031-e578-4605-8d4c-81ce121d92c3" />
 </Solution>

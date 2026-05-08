@@ -25,6 +25,13 @@ export interface CaptureSize {
 
 declare global {
   interface Window {
+    windowControls?: {
+      minimize(): Promise<void>
+      toggleMaximize(): Promise<boolean>
+      close(): Promise<void>
+      isMaximized(): Promise<boolean>
+      onMaximizedChange(callback: (maximized: boolean) => void): () => void
+    }
     captureAPI: {
       start(): Promise<void>
       stop(): void
